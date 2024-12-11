@@ -1,0 +1,245 @@
+/* Contact us form */
+
+.contact-us__main__container {
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.contact-us__form__container {
+    width: 100%;
+}
+
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form__row {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-us__form__group {
+    width: 100%;
+}
+
+.contact__email {
+    margin-bottom: 40px;
+}
+
+.contact-us__form__group label {
+    padding-block: 2px;
+    font-size: 1rem;
+    font-family: var(--font-medium);
+    color: var(--clr-900);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-us__form__group input,
+.contact-us__form__group select,
+.contact-us__form__group textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-block: 2px;
+    font-size: 1rem;
+    font-family: var(--font-medium);
+    color: var(--clr-900);
+}
+
+input::placeholder {
+    background-color: #fff;
+    font-size: 1rem;
+    font-family: var(--font-medium);
+    color: var(--clr-900);
+}
+
+.phone__input {
+    display: flex;
+    gap: 10px;
+    border: 1px solid var(--clr-200);
+    border-radius: 8px;
+}
+
+.phone__input select {
+    appearance: none;
+    background: url("../assets/icons/chevron-down.svg") no-repeat right 10% center;
+    width: 20%;
+    padding: 10px 10px 10px 10px;
+    font-family: var(--font-regular);
+    color: var(--clr-900);
+}
+
+.phone__input select:focus {
+    border: var(--clr-200);
+}
+
+.phone__input .contact__phone__number::placeholder {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: var(--font-regular);
+    color: var(--clr-500);
+    font-size: 1rem;
+}
+
+.contact-us__form__group textarea {
+    height: 200px;
+    resize: none;
+    border: 1px solid var(--clr-200);
+}
+
+textarea::placeholder {
+    font-family: var(--font-regular);
+    color: var(--clr-500);
+    font-size: 1rem;
+}
+
+.contact-us__checkbox__group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.contact-us__checkbox__group input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--clr-200);
+    border-radius: 6px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.contact-us__checkbox__group p {
+    font-family: var(--font-regular);
+    font-size: 1rem;
+    color: var(--clr-500);
+    line-height: 1.5;
+}
+
+.contact-us__submit__button {
+    background-color: var(--clr-900);
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    font-family: var(--font-bold);
+    font-size: 1.125rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us__submit__button:hover {
+    background-color: var(--clr-700);
+}
+
+@media (max-width: 420px) {
+    .form__row {
+        flex-direction: column;
+    }
+}
+
+/* Contact Address */
+
+.contact-us__address__container {
+    width: 100%;
+    padding-block-end: 56px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.contact__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.email__icon {
+    background: url("../assets/icons/mail\ 1.svg") no-repeat center/contain;
+}
+
+.phone__icon {
+    background: url("../assets/icons/phone.svg") no-repeat center/contain;
+}
+
+.office__icon {
+    background: url("../assets/icons/head-office.svg") no-repeat center/contain;
+}
+
+.contact__item__detail h5 {
+    font-family: var(--font-bold);
+    font-size: 1.125rem;
+    color: var(--clr-900);
+}
+
+.contact__item__detail p {
+    font-family: var(--font-regular);
+    font-size: 1rem;
+    color: var(--clr-500);
+}
+
+address {
+    font-style: normal;
+}
+
+.contact__item__detail a,
+.address__office {
+    font-family: var(--font-medium);
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.8rem + 0.31vw, 1rem);
+    color: var(--clr-900);
+}
+
+@media (width>=33em) {
+    .contact-us__address__container {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
+
+@media (width>=48em) {
+    .contact-us__address__container {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+}
+
+@media (width>=64em) {
+    .contact__item__detail a,
+    .address__office {
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.384rem + 0.961vw, 1.25rem);
+    }
+    .contact-us__address__container {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+}
+
+@media (width>=75em) {
+    .contact__item__detail h5 {
+        margin-bottom: 4px;
+    }
+    .contact-us__main__container {
+        flex-direction: row;
+        gap: 56px;
+        justify-content: space-between;
+    }
+    .contact-us__address__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}

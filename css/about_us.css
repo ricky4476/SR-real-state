@@ -1,0 +1,437 @@
+/* Header Section */
+
+.header {
+    background: none;
+}
+
+.manu__list li a {
+    font-family: var(--font-regular);
+    font-size: 0.875rem;
+    color: var(--clr-500);
+    transition: 0.3s ease;
+    line-height: 1.55;
+}
+
+.manu__list li a:hover,
+.manu__list li:hover {
+    color: var(--clr-900);
+    border-color: var(--clr-900);
+    background: white;
+}
+
+.manu__list li .manu__active {
+    font-family: var(--font-medium);
+    color: var(--clr-900);
+}
+
+/* About Hero Section */
+
+.about__hero {
+    padding-block-start: 60px;
+}
+
+.about__heading h2 {
+    font-size: 2.5rem;
+}
+
+.about__details p {
+    font-size: 1rem;
+}
+
+.about__hero__image {
+    flex: 1 1 100%;
+}
+
+.about__hero__image img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    margin-block: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* properties__number Section */
+
+.properties__number {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    text-align: center;
+}
+
+.properties__number h3 {
+    font-family: var(--font-medium);
+    font-size: 2.5rem;
+    color: var(--clr-900);
+    position: relative;
+}
+
+.properties__number span {
+    font-family: var(--font-medium);
+    font-size: 1.5rem;
+    color: var(--clr-500);
+    position: absolute;
+}
+
+.properties__number p {
+    font-family: var(--font-medium);
+    font-size: 1rem;
+    color: var(--clr-500);
+}
+
+.number__box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 1 100%;
+}
+
+/* business__excellence section */
+
+.business__excellence {
+    padding-top: 56px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.business__excellence__heading h2 {
+    font-size: 2rem;
+    padding-bottom: 24px;
+}
+
+.business__excellence__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.business__excellence__image {
+    width: 100%;
+}
+
+.business__excellence__image img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bank Relation Section */
+
+.bank__relation {
+    padding-block: 60px;
+}
+
+.trusted__bank {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.bank__title h4 {
+    font-family: var(--font-regular);
+    font-size: 2rem;
+    text-wrap: nowrap;
+}
+
+.client__bank {
+    width: 80%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.client__bank img {
+    width: 110px;
+}
+
+/* testimonial__section */
+
+.testimonial__section {
+    padding-block: 60px;
+}
+
+.testimonial__headeing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--clr-100);
+}
+
+.testimonial__headeing p {
+    color: var(--clr-600);
+}
+
+.testimonial__content {
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+}
+
+.clients__testiminial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.testimonial__title {
+    font-family: var(--font-medium);
+    font-size: 2rem;
+    color: var(--clr-900);
+}
+
+.testimonial__message {
+    color: var(--clr-600);
+    font-size: 1.125rem;
+}
+
+.testimonial__author {
+    font-family: var(--font-medium);
+    font-size: 1rem;
+    color: var(--clr-900);
+}
+
+.scroll__line {
+    display: flex;
+    gap: 8px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.testiminial__scroll {
+    width: 53px;
+    height: 4px;
+    border-radius: 4px;
+    color: var(--clr-200);
+    background-color: var(--clr-200);
+}
+
+.testiminial__scroll__active {
+    width: 53px;
+    height: 4px;
+    border-radius: 4px;
+    color: var(--clr-900);
+    background-color: var(--clr-900);
+}
+
+.testimonial__image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiding manu list */
+
+@media (max-width: 51.25em) {
+    .screen820__hidden {
+        display: none;
+    }
+}
+
+/* Hiding manu list */
+
+/* Screen size 576px to 767px */
+
+@media (width >=36em) {
+    .client__bank {
+        gap: 35px;
+    }
+    .trusted__bank {
+        justify-content: center;
+    }
+}
+
+/* Screen size 768px to 1023px */
+
+@media (width >=48em) {
+    .manu__list {
+        gap: 0;
+    }
+    .about__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+    .about__heading {
+        width: 50%;
+    }
+    .about__details {
+        width: 50%;
+    }
+    .about__details p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        overflow: hidden;
+    }
+    .about__hero__image img {
+        aspect-ratio: 1/0.8;
+    }
+    .properties__number {
+        flex-wrap: nowrap;
+    }
+    .business__excellence__heading h2 {
+        font-size: 2.5rem;
+    }
+    .bank__title h4 {
+        font-size: 2.5rem;
+    }
+    .client__bank {
+        width: 90%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 24px;
+    }
+    .testimonial__headeing {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .testimonial__headeing h2 {
+        width: 50%;
+    }
+    .testimonial__headeing p {
+        width: 50%;
+        gap: 30px;
+    }
+    .testimonial__content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Screen size 1024px to 1199px */
+
+@media (width >=64em) {
+    .manu__list {
+        gap: 10px;
+    }
+    .about__details p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 6;
+        overflow: hidden;
+    }
+    .about__hero__image img {
+        aspect-ratio: 1/0.83;
+        margin-block: 56px;
+        max-height: 723px;
+    }
+    .properties__number h3 {
+        font-size: 3rem;
+    }
+    .properties__number span {
+        font-size: 2rem;
+    }
+    .properties__number p {
+        font-size: 1.125rem;
+    }
+    .business__excellence__image img {
+        aspect-ratio: unset;
+        height: 525px;
+    }
+    .client__bank {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+    .testimonial__headeing h2 {
+        font-size: 2.5rem;
+        width: 30%;
+    }
+    .testimonial__text {
+        width: 90%;
+    }
+    .testimonial__image {
+        width: 80%;
+        align-self: flex-end;
+    }
+}
+
+/* Screen size 1200px to 1439px */
+
+@media (width >=75em) {
+    .about__content {
+        gap: 24px;
+        align-items: center;
+    }
+    .about__heading {
+        width: 45%;
+    }
+    .about__heading h2 {
+        font-size: 4rem;
+    }
+    .about__details {
+        width: 45%;
+    }
+    .about__details p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        overflow: hidden;
+        font-size: 1.125rem;
+    }
+    .business__excellence__heading {
+        font-size: 3rem;
+    }
+    .business__excellence__details p {
+        font-size: 1.25rem;
+    }
+    .business__excellence {
+        flex-direction: row;
+    }
+    .business__excellence__text {
+        width: 100%;
+    }
+    .business__excellence__image img {
+        width: 100%;
+        height: 770px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial__headeing h2 {
+        font-size: 3.5rem;
+        width: 50%;
+    }
+    .testimonial__headeing p {
+        font-size: 1.125rem;
+        width: 50%;
+    }
+    .testimonial__text {
+        width: 77%;
+    }
+    .testimonial__title {
+        font-size: 3rem;
+    }
+    .testimonial__message {
+        font-size: 2rem;
+    }
+    .testimonial__author {
+        font-size: 1.125rem;
+    }
+}
+
+/* Screen size 1440px to 1920px */
+
+@media (width >=90em) {
+    .about__heading {
+        width: 40%;
+    }
+    .business__excellence__heading {
+        font-size: 3.25rem;
+    }
+}

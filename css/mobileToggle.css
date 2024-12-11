@@ -1,0 +1,71 @@
+/* Styling Mobile Navigation Manu */
+
+body {
+    min-height: 100vh;
+}
+
+.mobile__wrapper {
+    max-width: 35.99rem;
+    width: calc(100% - 40px);
+    margin-inline: auto;
+    padding-top: 19px;
+}
+
+/* Mobile header */
+
+.mobile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close__manu {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.close__manu svg:hover>path {
+    stroke: var(--clr-500);
+}
+
+/* Mobile Navigation Manu */
+
+.mobile__nav {
+    padding-block-start: 32px;
+}
+
+.mobileManu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobileManu__list li {
+    padding: 4px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.mobileManu__list li a {
+    font-family: var(--font-medium), sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--clr-500);
+}
+
+.mobileManu__list .active__design a {
+    color: var(--clr-900);
+}
+
+.mobileManu__list li a:hover,
+.mobileManu__list li a:focus {
+    color: var(--clr-900);
+}
+
+.mobile__ctn__btn {
+    display: flex;
+    margin-top: 32px;
+    margin-inline: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

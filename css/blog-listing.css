@@ -1,0 +1,418 @@
+/* Blog Listing Headline Part */
+
+.listing__header {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.listing__headline {
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.7rem + 1.23vw, 2.5rem);
+    width: 80%;
+    align-self: flex-start;
+}
+
+.listing__details {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Search Box */
+
+.search__wrapper {
+    padding-bottom: 56px;
+    margin-top: 24px;
+}
+
+/* Blog Grid Section */
+
+.blog__section {
+    padding-block: 80px;
+}
+
+.blog__header {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.listing__headline,
+.blog__header h2 {
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.7rem + 1.23vw, 2.5rem);
+}
+
+.blog__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    row-gap: 24px;
+    padding-block: 40px;
+}
+
+.blog__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.blogCard__content {
+    gap: 16px;
+}
+
+.blog__date__status {
+    display: flex;
+    gap: 16px;
+}
+
+.blog__listing__btn {
+    margin: 0;
+    margin-inline: auto;
+}
+
+.blog__date__status p {
+    font-size: 1rem;
+}
+
+.blog__status img {
+    width: 20px;
+    height: 20px;
+}
+
+.blog__title h3 {
+    font-size: 2rem;
+    font-family: var(--font-medium);
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.blog__card__details p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Blog Listing Hero Part */
+
+.blog__lising__hero h3 {
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.71rem + 1.23vw, 2.5rem);
+}
+
+.blog__lising__hero .big__screen__blog__header {
+    display: none;
+}
+
+@media (width > 1024px) {
+    .blog__lising__hero .small__screen__blog__header {
+        display: none;
+    }
+    .blog__lising__hero .big__screen__blog__header {
+        display: block;
+    }
+}
+
+@media (width >=36em) {
+    .blog__header p {
+        width: 45ch;
+    }
+    .listing__headline {
+        width: 70%;
+    }
+}
+
+@media (width >=48em) {
+    .listing__header {
+        flex-direction: row;
+    }
+    .listing__headline {
+        width: 50%;
+    }
+    .listing__details {
+        width: 50%;
+    }
+    .blog__container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .blog__header p {
+        width: 50ch;
+    }
+}
+
+@media (width >=64em) {
+    .blog__container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .listing__headline,
+    .blog__header h2 {
+        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 0.65rem + 2.88vw, 3.25rem);
+    }
+    .blog__header p {
+        width: 70ch;
+    }
+    .blog__header h2 {
+        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 0.65rem + 2.88vw, 3.25rem);
+    }
+    .blog__title h3 {
+        font-size: 1.5rem;
+    }
+    .listing__details,
+    .blog__header p,
+    .blog__listing__hero__p p {
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.69rem + 0.48vw, 1.125rem);
+    }
+    /* Blog Hero Section post Card */
+    .blog__hero__card {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+    .blog__hero__card .blog__image {
+        width: 50%;
+    }
+    .blog__hero__card .blogCard__content {
+        width: 50%;
+    }
+}
+
+@media (width >=75em) {
+    .blog__container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .listing__header {
+        flex-direction: row;
+        gap: 100px;
+    }
+    /* Blog Hero Side Card */
+    .blog__hero__container {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .blog__hero__card {
+        width: 70%;
+    }
+    .blog__hero__side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 35%;
+    }
+    .blog__listing__hero__side__card {
+        flex-direction: row;
+        gap: 16px;
+    }
+    .blog__listing__hero__side__card .blog__image img {
+        max-width: none;
+    }
+    .blog__listing__hero__side__card .blogCard__content {
+        gap: 8px;
+    }
+}
+
+@media (width >=90em) {
+    .blog__container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+/* Contact Section */
+
+.contact__section {
+    height: 502px;
+    background: url("../assets/images/blog/Contact\ Form.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 28px;
+}
+
+.contact__section::before {
+    border-radius: 28px;
+}
+
+.contact__wrapper {
+    padding-block: 80px;
+    text-align: center;
+}
+
+.contact__intro h2 {
+    /* font size screen 375px to 1024px */
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.42rem + 2.47vw, 3rem);
+}
+
+.contact__intro p {
+    /* font size screen 375px to 1024px */
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.8rem + 0.31vw, 1rem);
+}
+
+/* Subscribe Form Styling */
+
+.subscribe__form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 504px;
+    margin: 0 auto;
+}
+
+.mail__box {
+    flex: 1;
+    padding-right: 8px;
+    padding-block: 8px;
+    padding-left: 16px;
+    width: 100%;
+    min-width: 200px;
+    background-color: var(--clr-body);
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.no__big__screen {
+    width: 100%;
+}
+
+/* Styling Input Field */
+
+.mail__box input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: var(--font-regular);
+    line-height: 1.55;
+    color: var(--clr-900);
+    width: 100%;
+}
+
+.mail__box input::placeholder {
+    font-size: 0.875rem;
+    font-family: var(--font-regular);
+    line-height: 1.55;
+    color: var(--clr-500);
+    text-align: left;
+}
+
+.mobile__screen_btn {
+    background-color: var(--clr-900);
+    color: var(--clr-body);
+    font-family: var(--font-bold);
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 12px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mailbox__subscribe__btn {
+    background-color: var(--clr-900);
+    color: var(--clr-body);
+    font-family: var(--font-bold);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile__screen_btn:hover,
+.mailbox__subscribe__btn:hover {
+    background-color: var(--clr-700);
+}
+
+@media (max-width: 576px) {
+    .mail__box {
+        flex: 1 1 100%;
+        /* Makes input box take full width */
+    }
+    .mail__box input {
+        flex: 1 1 100%;
+        /* Makes input box take full width */
+    }
+}
+
+@media (width>576px) {
+    .mobile__screen_btn {
+        display: none;
+    }
+    .mailbox__subscribe__btn {
+        display: block;
+    }
+}
+
+@media (width>=36em) {
+    .contact__intro {
+        align-items: center;
+    }
+    .contact__intro p {
+        width: 35ch;
+    }
+}
+
+@media (width>=64em) {
+    .contact__section {
+        height: 444px;
+        background-position: center;
+    }
+    .contact__intro {
+        align-items: center;
+        width: 75%;
+    }
+    .contact__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact__intro h2 {
+        /* font size screen 1024px to 1440px */
+        font-size: 3rem;
+        font-size: clamp(3rem, 0.56rem + 3.85vw, 4rem);
+    }
+    .contact__intro p {
+        /* font size screen 1024px to 1440px */
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.38rem + 0.96vw, 1.25rem);
+    }
+}
+
+@media (width>=75em) {
+    .contact__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (width>=90em) {
+    .contact__section {
+        height: 498px;
+    }
+    .contact__intro {
+        width: 70%;
+    }
+    .contact__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact__intro p {
+        width: 60ch;
+    }
+}

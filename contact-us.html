@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icons/fab-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/boilerplate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/property-listing.css" />
+    <link rel="stylesheet" href="./css/blog-listing.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
+
+    <title>Contact us</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="header__wrapper content__wrapper" id="hero__contact">
+            <div class="logo">
+                <a href="./index.html"><img
+              src="./assets/images/logo_mobile.png"
+              alt="Comfea Real Estate"
+              width="107.90"
+              height="32"
+          /></a>
+            </div>
+            <nav class="top__nav mobile__hidden">
+                <ul class="manu__list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./property-listing.html">Property</a></li>
+                    <li class="tab__manu__hidden">
+                        <a href="./contact-us.html">Agent</a>
+                    </li>
+                    <li class="tab__manu__hidden">
+                        <a href="./blog-listing.html">Blog</a>
+                    </li>
+                    <li><a href="./faq.html">FAQ's</a></li>
+                </ul>
+            </nav>
+            <button class="ctn__button dark__btn mobile__hidden">
+          <a href="./contact-us.html">Contact Us</a>
+        </button>
+            <!-- Mobile menu toggle -->
+            <button class="menu__toggle big__screen__hidden" aria-label="Toggle Menu" role="img">
+          <a href="./mobileToggleMenu.html">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 9H27M5 16H27M5 23H27"
+                stroke="#18181B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg>
+          </a>
+        </button>
+        </div>
+    </header>
+    <!-- Header ends -->
+    <main class="content__wrapper">
+        <!-- Contact Us Header start  -->
+        <div class="contact-us__header listing__header faq__header">
+            <h2 class="contact-us__headline listing__headline faq__headline">
+                Contact us
+            </h2>
+            <p class="contact-us__p listing__details faq__p">
+                Our friendly team would love to hear from you.
+            </p>
+        </div>
+        <!-- Contact Us Header ends  -->
+
+        <!-- Contact Us Main Content -->
+        <div class="contact-us__main__container">
+            <!-- Contact Form -->
+            <div class="contact-us__form__container">
+                <form class="contact-us__form">
+                    <div class="form__row">
+                        <div class="contact-us__form__group">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" />
+                        </div>
+                        <div class="contact-us__form__group">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="contact-us__form__group">
+                        <input type="email" id="email" class="contact__email" name="email" placeholder="Email" />
+                    </div>
+
+                    <div class="contact-us__form__group contact-us__phone__number">
+                        <label for="phone__number">Phone Number</label>
+                        <div class="phone__input">
+                            <select class="country__code" name="country-code">
+                  <option class="" value="BD">BD  ↓</option>
+                  <option value="US">US</option>
+                  <option value="IND">IND</option>
+                  <option value="PK">PK</option>
+                  <option value="CA">CA</option>
+                </select>
+                            <input class="contact__phone__number" type="tel" id="phone-number" name="phone-number" placeholder="+1 (555) 000-0000" />
+                        </div>
+                    </div>
+
+                    <div class="contact-us__form__group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Leave us a message..."></textarea>
+                    </div>
+
+                    <div class="contact-us__form__group contact-us__checkbox__group">
+                        <input type="checkbox" name="privacy-policy" />
+                        <p>You agree to our friendly privacy policy.</p>
+                    </div>
+
+                    <button type="submit" class="contact-us__submit__button">
+              Send Message
+            </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-us__address__container">
+                <!-- Email -->
+                <div class="contact__item">
+                    <i class="icon email__icon"></i>
+                    <div class="contact__item__detail">
+                        <h5>Email</h5>
+                        <p>Our friendly team is here to help.</p>
+                    </div>
+                    <a href="mailto:shabbirricky1@gmail.com">shabbirricky1@gmail.com</a>
+                </div>
+                <!-- Phone -->
+                <div class="contact__item">
+                    <i class="icon phone__icon"></i>
+                    <div class="contact__item__detail">
+                        <h5>Phone</h5>
+                        <p>Mon-Fri from 8am to 5pm.</p>
+                    </div>
+                    <a href="tel:+880163340447">+880163340447 </a>
+                </div>
+                <!-- Head Office -->
+                <div class="contact__item">
+                    <i class="icon office__icon"></i>
+                    <div class="contact__item__detail">
+                        <h5>Head Office</h5>
+                        <p>Come say hello at our office HQ.</p>
+                    </div>
+                    <address class="address__office">
+              Fatullah 1420, Narayangonj, Dhaka, Bangladesh.
+            </address>
+                </div>
+                <!-- Office -->
+                <div class="contact__item">
+                    <i class="icon email__icon"></i>
+                    <div class="contact__item__detail">
+                        <h5>Office</h5>
+                        <p>Come say hello at our office HQ.</p>
+                    </div>
+                    <address class="address__office">
+                        Fatullah 1420, Narayangonj, Dhaka, Bangladesh.
+            </address>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer__upper">
+                <div class="company__info">
+                    <div class="company__description">
+                        <h4>
+                            We are an experienced real estate agency based in United Kingdom
+                        </h4>
+                    </div>
+                    <div class="CompanyContact__info">
+                        <ul class="contact__info">
+                            <li class="list__heading">General Enquries</li>
+                            <li class="list__info">
+                                <a href="mailto:shabbirricky1@gmail.com">shabbirricky1@gmail.com</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list__heading">Phone</li>
+                            <li class="list__info">
+                                <a href="tel:+1633404476">+1 6334-04476</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list__heading">Office</li>
+                            <li class="list__info">
+                                Fatullah 1420, Narayangong, Dhaka, Bangladesh.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Manu -->
+                <div class="footer__manu">
+                    <div class="footer__nav">
+                        <p class="footernav__title">Navigation</p>
+                        <div class="footer__navList">
+                            <ul class="footer__navlinks">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about_us.html">About Us</a></li>
+                                <li><a href="./property-listing.html">Listing Product</a></li>
+                            </ul>
+                            <ul class="footer__navlinks">
+                                <li><a href="./faq.html">FAQ's</a></li>
+                                <li><a href="./blog-listing.html">Blog</a></li>
+                                <li><a href="./contact-us.html">Agent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <p class="social_titile">Follow Us</p>
+                        <div class="social__links">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter</a>
+                            <!-- <a href="#">Behance</a>
+                            <a href="#">Dribbble</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <a href="./index.html"><img
+              src="./assets/images/logo.png"
+              alt="Comfea Real Estate"
+              width="107.90"
+              height="32"
+          /></a>
+                <p class="copyright">&copy; 2023-2024, All Rights Reserved</p>
+
+                <div class="btn___back__top">
+                    <a class="back__to__top" href="#hero__contact">
+                        <p>Back to top</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.6666 5.21928V13.3337H7.33327V5.21928L3.75726 8.79526L2.81445 7.85246L7.99993 2.66699L13.1853 7.85246L12.2425 8.79526L8.6666 5.21928Z"
+                  fill="#FCFCFC"
+                />
+              </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+</body>
+
+</html>
